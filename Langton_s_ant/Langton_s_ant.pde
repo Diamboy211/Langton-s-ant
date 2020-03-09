@@ -2,7 +2,6 @@ int[][] grid;
 int antx;
 int anty;
 int dir = 0;
-int speed = 400; // Edit this to edit speed
 
 void setup() {
   size(800, 800);
@@ -13,7 +12,7 @@ void setup() {
 }
 
 void draw() {
-  for (int i = 0; i < speed; i++) {
+  for (int i = 0; i < 400; i++) {
     int[] v = moveForward();
     if (v[2] == 1) {
       stroke(0);
